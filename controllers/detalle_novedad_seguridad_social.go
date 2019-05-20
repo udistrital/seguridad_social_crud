@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"github.com/astaxie/beego"
 	"github.com/manucorporat/try"
-	"github.com/udistrital/ss_crud_api/models"
+	"github.com/udistrital/seguridad_social_crud/models"
 )
 
 // DetalleNovedadSeguridadSocialController operations for DetalleNovedadSeguridadSocial

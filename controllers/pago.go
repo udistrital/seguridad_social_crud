@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/udistrital/ss_crud_api/models"
+	"github.com/udistrital/seguridad_social_crud/models"
 
 	"github.com/astaxie/beego"
 )
