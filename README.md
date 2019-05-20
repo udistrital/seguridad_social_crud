@@ -24,4 +24,3 @@ GNU General Public License for more details.
 ### OFICINA ASESORA DE SISTEMAS
 
 ### 2019
-
