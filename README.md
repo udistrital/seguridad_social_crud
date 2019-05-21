@@ -1,6 +1,6 @@
-# ss_crud_api
+# seguridad_social_crud
 
-ss_crud_api, API de entidades que utiliza el sistema de Seguridad Social
+seguridad_social_crud, API de entidades que utiliza el sistema de Seguridad Social
 
 Está escrito en lenguaje GO, utilizando el framework beego (https://beego.me/)
 

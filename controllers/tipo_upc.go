@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 	"fmt"
-	"github.com/udistrital/ss_crud_api/models"
+	"github.com/udistrital/seguridad_social_crud/models"
 
 	"github.com/astaxie/beego"
 	"github.com/manucorporat/try"

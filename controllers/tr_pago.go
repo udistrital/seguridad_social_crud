@@ -3,7 +3,7 @@ package controllers
 import (
 	"encoding/json"
 
-	"github.com/udistrital/ss_crud_api/models"
+	"github.com/udistrital/seguridad_social_crud/models"
 
 	"github.com/astaxie/beego"
 )
@@ -18,6 +18,7 @@ func (c *TrPeriodoPagoController) URLMapping() {
 	c.Mapping("Post", c.Post)
 }
 
+// Post ...
 // @Title TrPeriodoPago
 // @Description Registra los pagos asociados a un nuevo periodo_pago
 // @Param	body		body 	models.TrPeriodoPago	true	"body for TrPeriodoPago content"

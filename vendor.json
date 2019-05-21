@@ -5,6 +5,7 @@
             "path": "github.com/astaxie/beego"
         },
         {
-            "path": "github.com/udistrital/ss_crud_api/routers"
+            "path": "github.com/udistrital/seguridad_social_crud/routers"
         }
     ]
+}

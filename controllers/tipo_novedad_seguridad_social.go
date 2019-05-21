@@ -3,7 +3,7 @@ package controllers
 import (
 	"encoding/json"
 	"errors"
-	"github.com/udistrital/ss_crud_api/models"
+	"github.com/udistrital/seguridad_social_crud/models"
 	"strconv"
 	"strings"
 	"fmt"
