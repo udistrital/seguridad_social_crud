@@ -2,8 +2,47 @@
 
 seguridad_social_crud, API de entidades que utiliza el sistema de Seguridad Social
 
-Está escrito en lenguaje GO, utilizando el framework beego (https://beego.me/)
+Este proyecto está escrito en el lenguaje Go, utilizando el framework beego (https://beego.me/).
 
+Se utiliza para administrar los modelos, transacciones y efectos de cambios directamente en la base de datos, nada de lógica. 
+
+
+# Ejecución 
+
+Clonar el repositorio
+
+```go
+  go get github.com/udistrital/seguridad_social_crud`
+```
+
+Moverse a la carpeta del proyecto
+
+```sh
+  cd $GOPATH/src/github.com/udistrital/seguridad_social_crud
+```
+
+Actualizar la rama develop
+
+```sh
+  git pull origin develop
+```
+
+
+Cambiar a la rama develop
+
+```git
+  git checkout develop
+```
+
+Asignar variables de entorno (ver fichero /conf/app.conf) 
+
+Después de asignar las variables de entorno ejecutar
+
+`bee run`
+
+Para crear/actualizar la documentación y archivo swagger de forma automática ejecutar dentro del proyecto
+
+`bee run -downdoc=true -gendoc=true`
 
 
 ## Derechos de Autor
