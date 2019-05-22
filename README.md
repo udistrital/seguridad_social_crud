@@ -9,40 +9,44 @@ Se utiliza para administrar los modelos, transacciones y efectos de cambios dire
 
 # Ejecución 
 
-Clonar el repositorio
+1. Clonar el repositorio
 
 ```go
   go get github.com/udistrital/seguridad_social_crud`
 ```
 
-Moverse a la carpeta del proyecto
+2. Moverse a la carpeta del proyecto
 
 ```sh
   cd $GOPATH/src/github.com/udistrital/seguridad_social_crud
 ```
 
-Actualizar la rama develop
+3. Actualizar la rama develop
 
 ```sh
   git pull origin develop
 ```
 
 
-Cambiar a la rama develop
+4. Cambiar a la rama develop
 
 ```git
   git checkout develop
 ```
 
-Asignar variables de entorno (ver fichero /conf/app.conf) 
+5. Asignar variables de entorno (ver fichero **/conf/app.conf**) 
 
-Después de asignar las variables de entorno ejecutar
+6. espués de asignar las variables de entorno ejecutar
 
-`bee run`
+```
+bee run
+```
 
-Para crear/actualizar la documentación y archivo swagger de forma automática ejecutar dentro del proyecto
+7. Para crear/actualizar la documentación y archivo swagger de forma automática ejecutar dentro del proyecto
 
-`bee run -downdoc=true -gendoc=true`
+```
+bee run -downdoc=true -gendoc=true
+```
 
 
 ## Derechos de Autor
