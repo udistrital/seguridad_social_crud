@@ -10,14 +10,11 @@ services:
       - .:/go/src/${API_BASE_DIR}/${API_NAME}
     ports: 
       - "${PORT}:${PORT}"
+    env:
+      - custom.env
     environment:
       - RUN_MODE=dev 
       - SS_CRUD_API_HTTP_PORT=${PORT}
-      - SS_CRUD_API_DB_USER=${SS_CRUD_API_DB_USER}
-      - SS_CRUD_API_DB_PASS=${SS_CRUD_API_DB_PASS}
-      - SS_CRUD_API_DB_URL=${SS_CRUD_API_DB_URL}
-      - SS_CRUD_API_DB_NAME=${SS_CRUD_API_DB_NAME}
-      - SS_CRUD_API_DB_SCHEMAS=${SS_CRUD_API_DB_SCHEMAS}
       - SERVICE_TAGS=traefik.enable=true,traefik.frontend.entryPoints=http,traefik.frontend.rule=Host:${SERVICE_NAME}.localhost   
     command: sh -c 'cd ${API_BASE_DIR}/${API_NAME};go get -v -u ./...; bee run'
     networks: 
