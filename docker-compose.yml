@@ -10,19 +10,18 @@ services:
       - .:/go/src/${API_BASE_DIR}/${API_NAME}
     ports: 
       - "${PORT}:${PORT}"
-    env:
+    env_file:
       - custom.env
     environment:
       - RUN_MODE=dev 
       - SS_CRUD_API_HTTP_PORT=${PORT}
       - SERVICE_TAGS=traefik.enable=true,traefik.frontend.entryPoints=http,traefik.frontend.rule=Host:${SERVICE_NAME}.localhost   
-    command: sh -c 'cd ${API_BASE_DIR}/${API_NAME};go get -v -u ./...; bee run'
+    command: sh -c 'cd ${API_BASE_DIR}/${API_NAME};go get -v -d -u ./...; bee run'
     networks: 
       - back_end
 
 volumes:
   gosrc:
-  financiera_mongo_data:
 networks: 
   back_end:
     external: true
